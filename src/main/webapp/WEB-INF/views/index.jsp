@@ -68,8 +68,24 @@
     </div>
 </main>
 <footer class="page-footer">
-    <div class="footer-copyright">
-        <div class="container">
+    <div class="container">
+        <div class="row">
+            <div class="col s9">
+                <h5 class="white-text">Footer Content</h5>
+                <p>This is where some important footer stuff would go but if I'm being honest I couldn't think of anything to put here. So this is
+                what you get for placeholder text.</p>
+            </div>
+            <div class="col s3">
+                <h5 class="white-text">Footer Links</h5>
+                <ul>
+                    <li><a class="grey-text text-lighten-3" href="#">The coolest link</a></li>
+                    <li><a class="grey-text text-lighten-3" href="#">The second link</a></li>
+                    <li><a class="grey-text text-lighten-3" href="#">Even one more link</a></li>
+                    <li><a class="grey-text text-lighten-3" href="#">Stop with the links</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-copyright">
             &#169; 2017 Copyright Text
         </div>
     </div>
