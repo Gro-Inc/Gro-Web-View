@@ -2,16 +2,13 @@
 <html>
 <head>
     <title>Home</title>
-    <script src="/resources/scripts/angular.min.js"></script>
-    <script src="/resources/scripts/root.js"></script>
-    <script src="/resources/scripts/jquery-3.1.1.min.js"></script>
-    <script src="/resources/materialize-src/js/materialize.min.js"></script>
-    <link rel="stylesheet" href="/resources/styles/sass/site.css">
+    <%@ include file="includes/scripts.jspf" %>
+    <%@ include file="includes/styles.jspf" %>
 </head>
-<body class="grey darken-3 white-text">
-<div ng-app="root">
-    <nav>
-        <div class="nav-wrapper green lighten-1">
+<body class="white-text" ng-app="root">
+<nav class="z-depth-3">
+    <div class="nav-wrapper">
+        <div class="container">
             <div class="row">
                 <div class="col s12">
                     <a href="#" class="brand-logo">Gro</a>
@@ -23,20 +20,59 @@
                 </div>
             </div>
         </div>
-    </nav>
-    <div class="row">
-        <div class="col s12">
-            <div class="row">
-                <div class="input-field col s4">
-                    <input type="text" ng-model="someText" id="angularFun"/>
-                    <label for="angularFun">Angular Fun</label>
+    </div>
+</nav>
+<main>
+    <div class="container">
+        <div class="row">
+        </div>
+        <div class="row">
+            <div class="col s5">
+                <div class="card hoverable">
+                    <div class="card-content">
+                        <span class="card-title">Why Gro?</span>
+                        <p>We believe a person learns the most from a mentor who has already achieved what that person aspires to achieve. But it’s
+                            not always easy or possible to find or reach out to these people. So we’ve created an app with the sole purpose of
+                            connecting those who want to learn with those who want to teach.</p>
+                    </div>
                 </div>
-                <div class="col s4">
-                    <p>{{someText}}</p>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col s7"></div>
+            <div class="col s5">
+                <div class="card hoverable">
+                    <div class="card-content">
+                        <span class="card-title">Want to play a game?</span>
+                        <p>With Gro you have a level that represents how much you've learned through the app. You gain points by conversing with
+                            your mentors, colleagues and students. There are five levels to earn in any category and each level becomes harder and
+                            harder to attain, but those with perseverence will have little problem reaching their goals.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col s5">
+                <div class="card hoverable">
+                    <div class="card-content">
+                        <span class="card-title">Why Mentor?</span>
+                        <p>Some learn by seeing, some learn by doing, but most everyone learns by teaching. Both mentor and student
+                            will gain experience from their sessions, but while students and colleagues will gain significant points in their
+                            roles, mentors gains points faster than anybody else.
+                        </p>
+                    </div>
                 </div>
             </div>
         </div>
     </div>
-</div>
+</main>
+<footer class="page-footer">
+    <div class="footer-copyright">
+        <div class="container">
+            &#169; 2017 Copyright Text
+        </div>
+    </div>
+</footer>
 </body>
 </html>

@@ -1,0 +1,4 @@
+<script src="/resources/scripts/angular.min.js"></script>
+<script src="/resources/scripts/root.js"></script>
+<script src="/resources/scripts/jquery-3.1.1.min.js"></script>
+<script src="/resources/materialize-src/js/materialize.min.js"></script>

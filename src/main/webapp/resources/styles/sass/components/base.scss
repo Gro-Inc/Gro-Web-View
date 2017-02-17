@@ -1,0 +1,26 @@
+@import "../../../materialize-src/sass/materialize";
+
+body {
+  background-color : $secondary-color;
+  display          : flex;
+  min-height       : 100vh;
+  flex-direction   : column;
+}
+
+main {
+  flex : 1 0 auto;
+}
+
+nav, footer {
+  background-color : $primary-color;
+}
+
+footer {
+  .footer-copyright {
+    background-color : $primary-color-dark;
+  }
+}
+
+.card {
+  background-color : $primary-color;
+}
