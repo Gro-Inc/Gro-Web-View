@@ -24,8 +24,7 @@
 </nav>
 <main>
     <div class="container">
-        <div class="row">
-        </div>
+        <div class="row"></div>
         <div class="row">
             <div class="col s5">
                 <div class="card hoverable">
@@ -73,7 +72,7 @@
             <div class="col s9">
                 <h5 class="white-text">Footer Content</h5>
                 <p>This is where some important footer stuff would go but if I'm being honest I couldn't think of anything to put here. So this is
-                what you get for placeholder text.</p>
+                    what you get for placeholder text.</p>
             </div>
             <div class="col s3">
                 <h5 class="white-text">Footer Links</h5>
@@ -85,8 +84,10 @@
                 </ul>
             </div>
         </div>
-        <div class="footer-copyright">
-            &#169; 2017 Copyright Text
+    </div>
+    <div class="footer-copyright">
+        <div class="container">
+            &copy; 2017 Copyright Text
         </div>
     </div>
 </footer>

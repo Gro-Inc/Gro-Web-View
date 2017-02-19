@@ -1,7 +1,6 @@
 @import "../../../materialize-src/sass/materialize";
 
 body {
-  background-color : $secondary-color;
   display          : flex;
   min-height       : 100vh;
   flex-direction   : column;
@@ -11,16 +10,18 @@ main {
   flex : 1 0 auto;
 }
 
-nav, footer {
+nav {
   background-color : $primary-color;
 }
 
 footer {
+  background-color : $primary-color-dark;
+
   .footer-copyright {
-    background-color : $primary-color-dark;
+    background-color : $secondary-color;
   }
 }
 
 .card {
-  background-color : $primary-color;
+  background-color: $primary-color;
 }
