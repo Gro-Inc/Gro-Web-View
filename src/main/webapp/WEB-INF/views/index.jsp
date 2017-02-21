@@ -78,28 +78,26 @@
         </div>
     </div>
 </main>
-<footer class="page-footer">
-    <div class="container">
-        <div class="row">
-            <div class="col s9">
-                <h5 class="white-text">Footer Content</h5>
-                <p>This is where some important footer stuff would go but if I'm being honest I couldn't think of anything to put here. So this is
-                    what you get for placeholder text.</p>
-            </div>
-            <div class="col s3">
-                <h5 class="white-text">Footer Links</h5>
-                <ul>
-                    <li><a class="grey-text text-lighten-3" href="#">The coolest link</a></li>
-                    <li><a class="grey-text text-lighten-3" href="#">The second link</a></li>
-                    <li><a class="grey-text text-lighten-3" href="#">Even one more link</a></li>
-                    <li><a class="grey-text text-lighten-3" href="#">Stop with the links</a></li>
-                </ul>
-            </div>
+<footer>
+    <div class="row">
+        <div class="col s10"></div>
+        <div class="col s2 black-text white z-depth-3">
+            <ul>
+                <li>Some guy</li>
+                <li>Some gal</li>
+                <li>Some pal</li>
+            </ul>
         </div>
     </div>
-    <div class="footer-copyright">
-        <div class="container">
-            &copy; 2017 Copyright Text
+    <div class="row">
+        <div class="col s3">
+            <p>
+                <small class="grey-text">&copy; 2017 Copyright Gro</small>
+            </p>
+        </div>
+        <div class="col s7"></div>
+        <div class="col s2 z-depth-3 hoverable" id="chat-box">
+            <h5>Chat</h5>
         </div>
     </div>
 </footer>

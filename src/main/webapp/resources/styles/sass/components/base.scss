@@ -1,15 +1,20 @@
 @import "../../../materialize-src/sass/materialize";
 
-body {
-  display        : flex;
-  min-height     : 100vh;
-  flex-direction : column;
-}
-
 main {
   flex : 1 0 auto;
 }
 
-nav, footer, .card {
+nav, .card, #chat-box {
   background-color : $primary-color;
+}
+
+footer {
+  position         : fixed;
+  bottom           : 0;
+  background-color : color("transparent", "base");
+  width            : 100%;
+
+  .row {
+    margin-bottom : 0;
+  }
 }
