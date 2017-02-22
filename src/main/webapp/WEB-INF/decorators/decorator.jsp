@@ -41,7 +41,7 @@
             <div class="col s10"></div>
             <div class="col s2 black-text white z-depth-3">
                 <ul>
-                    <li ng-repeat="message in messages">{{message}}</li>
+                    <li ng-repeat="message in messages track by $index">{{message}}</li>
                 </ul>
             </div>
         </div>

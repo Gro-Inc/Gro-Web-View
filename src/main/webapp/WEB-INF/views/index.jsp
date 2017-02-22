@@ -7,18 +7,6 @@
     <div class="container">
         <div class="row"></div>
         <div class="row">
-            <div class="col s3"></div>
-            <div class="col s6" ng-controller="hello">
-                <div class="card hoverable">
-                    <div class="card-content">
-                        <span class="card-title">A REST response using angular</span>
-                        <p>{{greeting}}</p>
-                    </div>
-                </div>
-            </div>
-            <div class="col s3"></div>
-        </div>
-        <div class="row">
             <div class="col s5">
                 <div class="card hoverable">
                     <div class="card-content">
