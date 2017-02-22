@@ -28,25 +28,33 @@
     <sitemesh:write property="body"/>
 </main>
 <footer>
-    <div class="row">
-        <div class="col s10"></div>
-        <div class="col s2 black-text white z-depth-3">
-            <ul>
-                <li>Some guy</li>
-                <li>Some gal</li>
-                <li>Some pal</li>
-            </ul>
+    <div ng-controller="chatController">
+        <div class="row">
+            <div class="col s10"></div>
+            <div class="col s2 white-text z-depth-3" id="chat-box-top">
+                <p>
+                    Some bad mentor
+                </p>
+            </div>
         </div>
-    </div>
-    <div class="row">
-        <div class="col s3">
-            <p>
-                <small class="grey-text">&copy; 2017 Copyright Gro</small>
-            </p>
+        <div class="row">
+            <div class="col s10"></div>
+            <div class="col s2 black-text white z-depth-3">
+                <ul>
+                    <li ng-repeat="message in messages">{{message}}</li>
+                </ul>
+            </div>
         </div>
-        <div class="col s7"></div>
-        <div class="col s2 z-depth-3 hoverable" id="chat-box">
-            <h5>Chat</h5>
+        <div class="row">
+            <div class="container">
+                <p id="copyright" class="">
+                    <small class="grey-text">&copy; 2017 Copyright Gro</small>
+                </p>
+            </div>
+            <div class="col s10"></div>
+            <div class="col s2 z-depth-3 hoverable white-text" id="chat-box">
+                <input type="text" name="chat" id="chat" ng-keypress="sendMessage($event)" ng-model="chatMessage">
+            </div>
         </div>
     </div>
 </footer>

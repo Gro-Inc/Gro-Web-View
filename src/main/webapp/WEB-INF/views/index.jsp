@@ -23,8 +23,8 @@
                 <div class="card hoverable">
                     <div class="card-content">
                         <span class="card-title">Why Gro?</span>
-                        <p>We believe a person learns the most from a mentor who has already achieved what that person aspires to achieve. But it’s
-                            not always easy or possible to find or reach out to these people. So we’ve created an app with the sole purpose of
+                        <p>We believe a person learns the most from a mentor who has already achieved what that person aspires to achieve. But it's
+                            not always easy or possible to find or reach out to these people. So we've created an app with the sole purpose of
                             connecting those who want to learn with those who want to teach.</p>
                     </div>
                 </div>

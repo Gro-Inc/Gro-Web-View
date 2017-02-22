@@ -6374,7 +6374,7 @@ button.picker__today:focus, button.picker__clear:focus, button.picker__close:foc
 main {
   flex: 1 0 auto; }
 
-nav, .card, #chat-box {
+nav, .card {
   background-color: #1de9b6; }
 
 footer {
@@ -6383,5 +6383,12 @@ footer {
   width: 100%; }
   footer .row {
     margin-bottom: 0; }
+
+#copyright {
+  position: fixed;
+  bottom: 0; }
+
+#chat-box, #chat-box-top {
+  background-color: #1de9b6; }
 
 /*# sourceMappingURL=site.css.map */
