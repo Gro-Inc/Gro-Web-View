@@ -28,34 +28,28 @@
     <sitemesh:write property="body"/>
 </main>
 <footer>
-    <div ng-controller="chatController">
+    <div ng-controller="chatController" id="chat-area">
         <div class="row">
             <div class="col s10"></div>
-            <div class="col s2 white-text z-depth-3" id="chat-box-top">
-                <p>
+            <div class="col s2 white-text" id="chat-box">
+                <div class="chat-box-top z-depth-3">
                     Some bad mentor
-                </p>
+                </div>
+                <div class="chat-box-middle z-depth-3">
+                    <div ng-repeat="message in messages track by $index" align="right">
+                        <div class="chat-message sent">{{message}}</div>
+                    </div>
+                </div>
+                <div class="chat-box-input z-depth-3">
+                    <input type="text" name="chat" id="chat" ng-keypress="sendMessage($event)" ng-model="chatMessage">
+                </div>
             </div>
         </div>
-        <div class="row">
-            <div class="col s10"></div>
-            <div class="col s2 black-text white z-depth-3">
-                <ul>
-                    <li ng-repeat="message in messages track by $index">{{message}}</li>
-                </ul>
-            </div>
-        </div>
-        <div class="row">
-            <div class="container">
-                <p id="copyright" class="">
-                    <small class="grey-text">&copy; 2017 Copyright Gro</small>
-                </p>
-            </div>
-            <div class="col s10"></div>
-            <div class="col s2 z-depth-3 hoverable white-text" id="chat-box">
-                <input type="text" name="chat" id="chat" ng-keypress="sendMessage($event)" ng-model="chatMessage">
-            </div>
-        </div>
+    </div>
+    <div class="row">
+        <p id="copyright">
+            <small class="grey-text">&copy; 2017 Copyright Gro</small>
+        </p>
     </div>
 </footer>
 </body>

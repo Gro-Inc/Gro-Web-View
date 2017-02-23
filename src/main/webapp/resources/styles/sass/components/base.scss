@@ -2,22 +2,10 @@ main {
   flex : 1 0 auto;
 }
 
-nav, .card {
+nav {
   background-color : $primary-color;
 }
 
-footer {
-  position         : fixed;
-  bottom           : 0;
-  background-color : color("transparent", "base");
-  width            : 100%;
-
-  .row {
-    margin-bottom : 0;
-  }
-}
-
-#copyright {
-  position : fixed;
-  bottom : 0;
+.card {
+  background-color : $secondary-color;
 }

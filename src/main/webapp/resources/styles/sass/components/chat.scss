@@ -1,3 +1,46 @@
-#chat-box, #chat-box-top {
-  background-color : $primary-color;
+#chat-area {
+  position : fixed;
+  bottom   : 0;
+  width    : 100%;
+
+  .row {
+    margin-bottom : 0;
+  }
+
+  .chat-box-top, .chat-box-input {
+    background-color : $primary-color;
+  }
+
+  .chat-box-top {
+    padding : 0 5px;
+  }
+
+  .chat-box-input {
+    padding : 0 15px;
+  }
+
+  .chat-box-middle {
+    max-width        : 100%;
+    height           : 200px;
+    background-color : #fff;
+    overflow-y       : auto;
+    overflow-x       : hidden;
+    text-overflow    : ellipsis;
+  }
+
+  .chat-message {
+    display : inline-block;
+    padding : 0 5px;
+    margin  : 1px 0;
+
+    &.sent {
+      margin-left      : auto;
+      background-color : $primary-color;
+      text-align       : right;
+    }
+
+    &.received {
+      background-color : $secondary-color;
+    }
+  }
 }
