@@ -31,7 +31,7 @@
     <div ng-controller="chatController" id="chat-area">
         <div class="row">
             <div class="col s10"></div>
-            <div class="col s2 white-text" id="chat-box">
+            <div class="col s2 white-text chat-box">
                 <div class="chat-box-top z-depth-3">
                     Some bad mentor
                 </div>
