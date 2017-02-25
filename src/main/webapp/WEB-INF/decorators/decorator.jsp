@@ -8,16 +8,16 @@
     <sitemesh:write property="head"/>
 </head>
 <body class="white-text" ng-app="root">
-<nav class="z-depth-3">
+<nav class="z-depth-3 white-text">
     <div class="nav-wrapper">
         <div class="container">
             <div class="row">
                 <div class="col s12">
-                    <a href="#" class="brand-logo">Gro</a>
-                    <ul id="nav-mobile" class="right hide-on-med-and-down">
-                        <li><a href="#">Some Link</a></li>
-                        <li><a href="#">Some Link</a></li>
-                        <li><a href="#">Some Link</a></li>
+                    <a href="<c:url value="/"/>" class="brand-logo">Gro</a>
+                    <ul id="nav-mobile" class="right hide-on-med-and-down input-field" ng-controller="registerController">
+                        <li><input type="text" placeholder="Username" ng-model="regUsername"/></li>
+                        <li><input type="text" placeholder="Password" ng-model="regPassword"/></li>
+                        <li><a class="waves-effect waves-light btn" ng-click="register()">Register</a></li>
                     </ul>
                 </div>
             </div>
@@ -41,7 +41,7 @@
                     </div>
                 </div>
                 <div class="chat-box-input z-depth-3">
-                    <input type="text" name="chat" id="chat" ng-keypress="sendMessage($event)" ng-model="chatMessage">
+                    <input type="text" name="chat" placeholder="Chat" id="chat" ng-keypress="sendMessage($event)" ng-model="chatMessage">
                 </div>
             </div>
         </div>

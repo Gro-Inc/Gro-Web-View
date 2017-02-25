@@ -1,5 +1,13 @@
 var app = angular.module("root", []);
 
+app.controller("registerController", function ($scope, $http) {
+    $scope.register = function () {
+        $http({url: "/services/user/register", method: "POST", params: {username: $scope.regUsername, password: $scope.regPassword}}).then(
+            function (response) {
+            });
+    };
+});
+
 app.controller("chatController", function ($scope, $http) {
     $scope.messages = [];
 
