@@ -13,7 +13,9 @@
     }
 
     .chat-box-top {
-      padding : 5px;
+      padding                 : 5px;
+      border-top-left-radius  : 2px;
+      border-top-right-radius : 2px;
     }
 
     .chat-box-input {
@@ -35,6 +37,7 @@
         text-overflow : ellipsis;
         overflow      : hidden;
         word-wrap     : break-word;
+        border-radius : 2px;
 
         &.sent {
           margin-left      : auto;

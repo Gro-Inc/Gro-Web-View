@@ -6389,7 +6389,9 @@ nav {
   #chat-area .chat-box .chat-box-top, #chat-area .chat-box .chat-box-input {
     background-color: #1de9b6; }
   #chat-area .chat-box .chat-box-top {
-    padding: 5px; }
+    padding: 5px;
+    border-top-left-radius: 2px;
+    border-top-right-radius: 2px; }
   #chat-area .chat-box .chat-box-input {
     padding: 0 15px; }
   #chat-area .chat-box .chat-box-middle {
@@ -6405,7 +6407,8 @@ nav {
       max-width: 250px;
       text-overflow: ellipsis;
       overflow: hidden;
-      word-wrap: break-word; }
+      word-wrap: break-word;
+      border-radius: 2px; }
       #chat-area .chat-box .chat-box-middle .chat-message.sent {
         margin-left: auto;
         background-color: #1de9b6;
