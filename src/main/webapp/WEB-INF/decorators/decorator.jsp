@@ -18,6 +18,7 @@
                         <li><input type="text" placeholder="Username" ng-model="regUsername"/></li>
                         <li><input type="text" placeholder="Password" ng-model="regPassword"/></li>
                         <li><a class="waves-effect waves-light btn" ng-click="register()">Register</a></li>
+                        <li><a class="waves-effect waves-light btn" href="/login">Log In</a></li>
                     </ul>
                 </div>
             </div>

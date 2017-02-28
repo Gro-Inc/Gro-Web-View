@@ -1,4 +1,3 @@
-<html>
 <head>
     <title>Gro</title>
 </head>
@@ -48,4 +47,3 @@
     </div>
 </main>
 </body>
-</html>
